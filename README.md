@@ -19,9 +19,10 @@ Components
 Pose Detection in MediaPipe tracks human body movements by detecting key body landmarks. This includes the detection of major body parts like shoulders, elbows, knees, and wrists, among others.
 
 Key features:
-33 body landmarks (in 2D or 3D).
-Pose tracking for full-body movement.
-Ideal for fitness tracking, motion capture, and interactive experiences.
+- 33 body landmarks (in 2D or 3D).
+- Pose tracking for full-body movement.
+- Ideal for fitness tracking, motion capture, and interactive experiences.
+- 
 2. Face Detection
 Face Detection identifies and tracks facial landmarks such as eyes, nose, and mouth. The system can track both the 2D position of the face and the 3D orientation of facial features.
 
