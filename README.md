@@ -186,22 +186,22 @@ Use Cases
 1. Augmented Reality (AR)
 Pose, face, and hand detection can be used for interactive AR experiences, such as:
 
-Virtual makeup apps that track facial landmarks and apply makeup in real time.
-Gesture-based control for interacting with virtual objects.
-Fitness apps that monitor and analyze body poses during exercises.
+- Virtual makeup apps that track facial landmarks and apply makeup in real time.
+- Gesture-based control for interacting with virtual objects.
+- Fitness apps that monitor and analyze body poses during exercises.
 2. Gesture Recognition
 Detect hand gestures and interpret them for applications like:
 
-Sign language recognition.
-Control systems for virtual interfaces or devices.
+- Sign language recognition.
+- Control systems for virtual interfaces or devices.
 3. Motion Capture and Analysis
 MediaPipe Pose is widely used in motion capture applications to track human movement in sports, dance, and animation.
-
+___
 Customization and Fine-Tuning
 MediaPipe offers pre-trained models, but you can further customize the solutions for specific use cases:
 
-Fine-tuning the models with custom datasets (e.g., if you need specific hand gestures or facial expressions).
-Adjusting model performance for trade-offs between speed and accuracy.
+- Fine-tuning the models with custom datasets (e.g., if you need specific hand gestures or facial expressions).
+- Adjusting model performance for trade-offs between speed and accuracy.
 You can modify the source code of the models to adapt them to your application, as MediaPipe is open-source.
 
 Conclusion
