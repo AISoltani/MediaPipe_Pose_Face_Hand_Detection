@@ -22,36 +22,40 @@ Key features:
 - 33 body landmarks (in 2D or 3D).
 - Pose tracking for full-body movement.
 - Ideal for fitness tracking, motion capture, and interactive experiences.
-- 
+
 2. Face Detection
 Face Detection identifies and tracks facial landmarks such as eyes, nose, and mouth. The system can track both the 2D position of the face and the 3D orientation of facial features.
 
 Key features:
-468 facial landmarks.
-3D facial pose and orientation.
-Ideal for facial recognition, emotion detection, augmented reality (AR) filters, and more.
+- 468 facial landmarks.
+- 3D facial pose and orientation.
+- Ideal for facial recognition, emotion detection, augmented reality (AR) filters, and more.
+
 3. Hand Detection
 Hand Detection in MediaPipe tracks the hand's position and keypoints in 2D or 3D space. It detects key hand gestures by identifying specific hand landmarks.
 
 Key features:
-21 hand keypoints (in 2D or 3D).
-Tracks multiple hands simultaneously.
-Ideal for gesture control, sign language recognition, and interactive AR/VR experiences.
+- 21 hand keypoints (in 2D or 3D).
+- Tracks multiple hands simultaneously.
+- Ideal for gesture control, sign language recognition, and interactive AR/VR experiences.
 How MediaPipe Works
 Underlying Technology
 MediaPipe Pose, Face, and Hand Detection solutions are powered by deep learning models that have been trained to detect and track body, face, and hand landmarks. These models use Convolutional Neural Networks (CNNs) and geometric algorithms to provide real-time accuracy and performance.
 
-Pose Model: The pose detection model uses a graph-based architecture to detect keypoints across the body. The model can detect and track body parts in real-time with minimal computational overhead.
+- Pose Model: The pose detection model uses a graph-based architecture to detect keypoints across the body. The model can detect and track body parts in real-time with minimal computational overhead.
 
-Face Model: The facial landmark detection model uses a landmark model trained on a large dataset of human faces to estimate 2D and 3D facial feature points.
+- Face Model: The facial landmark detection model uses a landmark model trained on a large dataset of human faces to estimate 2D and 3D facial feature points.
 
-Hand Model: The hand tracking model estimates 21 key hand landmarks (e.g., fingertips, knuckles, wrists) for each hand, even in challenging conditions like overlapping hands or occlusions.
+- Hand Model: The hand tracking model estimates 21 key hand landmarks (e.g., fingertips, knuckles, wrists) for each hand, even in challenging conditions like overlapping hands or occlusions.
 
 Performance
-MediaPipe is designed for real-time performance. It can run on both CPU and GPU for a variety of platforms, offering fast processing speeds while maintaining low-latency.
-Depending on your hardware configuration, the system can scale for both mobile devices (Android, iOS) and desktop environments (Windows, Linux, macOS).
+- MediaPipe is designed for real-time performance. It can run on both CPU and GPU for a variety of platforms, offering fast processing speeds while maintaining low-latency.
+- Depending on your hardware configuration, the system can scale for both mobile devices (Android, iOS) and desktop environments (Windows, Linux, macOS).
 Installation
 To use MediaPipe Pose, Face, and Hand Detection in your applications, follow the steps below.
 
 1. Install Dependencies
 Python version 3.6+ is recommended. To install MediaPipe, use pip:
+```bash
+pip install mediapipe
+```
