@@ -4,7 +4,7 @@
 MediaPipe is a powerful framework developed by Google for building cross-platform, customizable AI and ML applications. Among the suite of pre-built solutions offered by MediaPipe, Pose Detection, Face Detection, and Hand Detection are some of the most widely used in the field of computer vision. These solutions leverage deep learning and real-time tracking to detect and track human poses, facial landmarks, and hand gestures from video or live camera feeds.
 
 This documentation provides an overview of how to use MediaPipe Pose, Face, and Hand Detection for integrating human tracking and gesture recognition capabilities into your applications.
-
+---
 Key Features
 Real-time detection and tracking of human body poses, faces, and hands.
 2D and 3D joint detection: Pose, Face, and Hand landmarks are tracked in both 2D and 3D space.
