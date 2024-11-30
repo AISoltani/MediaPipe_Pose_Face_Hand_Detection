@@ -47,7 +47,7 @@ MediaPipe Pose, Face, and Hand Detection solutions are powered by deep learning 
 - Face Model: The facial landmark detection model uses a landmark model trained on a large dataset of human faces to estimate 2D and 3D facial feature points.
 
 - Hand Model: The hand tracking model estimates 21 key hand landmarks (e.g., fingertips, knuckles, wrists) for each hand, even in challenging conditions like overlapping hands or occlusions.
-
+___
 Performance
 - MediaPipe is designed for real-time performance. It can run on both CPU and GPU for a variety of platforms, offering fast processing speeds while maintaining low-latency.
 - Depending on your hardware configuration, the system can scale for both mobile devices (Android, iOS) and desktop environments (Windows, Linux, macOS).
@@ -58,4 +58,50 @@ To use MediaPipe Pose, Face, and Hand Detection in your applications, follow the
 Python version 3.6+ is recommended. To install MediaPipe, use pip:
 ```bash
 pip install mediapipe
+```
+2. Install OpenCV (Optional)
+OpenCV is useful for image or video input/output. You can install it with the following command:
+```bash
+pip install opencv-python
+```
+3. Import and Use MediaPipe in Code
+Here is a simple example of how to use MediaPipe for Pose, Face, and Hand Detection in Python.
+___
+Example Usage
+Pose Detection
+```bash
+import mediapipe as mp
+import cv2
+
+# Initialize Pose module
+mp_pose = mp.solutions.pose
+pose = mp_pose.Pose()
+
+# Capture video from webcam
+cap = cv2.VideoCapture(0)
+
+while cap.isOpened():
+    ret, frame = cap.read()
+
+    if not ret:
+        break
+
+    # Convert the frame to RGB
+    rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+
+    # Process the frame and detect pose landmarks
+    results = pose.process(rgb_frame)
+
+    if results.pose_landmarks:
+        # Draw landmarks on the image
+        mp.solutions.drawing_utils.draw_landmarks(frame, results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
+
+    # Display the resulting frame
+    cv2.imshow("Pose Detection", frame)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+cap.release()
+cv2.destroyAllWindows()
 ```
