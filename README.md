@@ -7,12 +7,13 @@ This documentation provides an overview of how to use MediaPipe Pose, Face, and 
 ___
 Key Features
 - Real-time detection and tracking of human body poses, faces, and hands.
-2D and 3D joint detection: Pose, Face, and Hand landmarks are tracked in both 2D and 3D space.
-Accurate body pose tracking: The framework can estimate positions of key body joints (e.g., shoulders, elbows, knees, wrists) with high accuracy.
-Facial landmark tracking: Detection of key facial landmarks such as eyes, eyebrows, nose, mouth, and jawline.
-Hand gesture recognition: Detects keypoints on hands to interpret gestures and movements in real time.
-GPU and CPU acceleration: Optimized for real-time performance across various platforms using CPU or GPU acceleration.
-Cross-platform support: Available for multiple platforms, including Android, iOS, and desktop environments.
+- 2D and 3D joint detection: Pose, Face, and Hand landmarks are tracked in both 2D and 3D space.
+- Accurate body pose tracking: The framework can estimate positions of key body joints (e.g., shoulders, elbows, knees, wrists) with high accuracy.
+- Facial landmark tracking: Detection of key facial landmarks such as eyes, eyebrows, nose, mouth, and jawline.
+- Hand gesture recognition: Detects keypoints on hands to interpret gestures and movements in real time.
+- GPU and CPU acceleration: Optimized for real-time performance across various platforms using CPU or GPU acceleration.
+- Cross-platform support: Available for multiple platforms, including Android, iOS, and desktop environments.
+___
 Components
 1. Pose Detection
 Pose Detection in MediaPipe tracks human body movements by detecting key body landmarks. This includes the detection of major body parts like shoulders, elbows, knees, and wrists, among others.
